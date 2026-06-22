@@ -1,0 +1,9 @@
+venv312/
+venv/
+**pycache**/
+*.pyc
+
+insurance-frontend/node_modules/
+insurance-frontend/dist/
+
+.env

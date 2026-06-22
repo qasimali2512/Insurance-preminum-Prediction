@@ -1,0 +1,8 @@
+{
+  "name": "insurance-project",
+  "scripts": {
+    "backend": "uvicorn app:app --reload",
+    "frontend": "cd insurance-frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  }
+}
