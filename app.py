@@ -10,7 +10,10 @@ import os
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://insurance-premium-prediction.vercel.app",
+        "https://insurance-premium-prediction-hgnorwmbp.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
