@@ -17,11 +17,12 @@ app.add_middleware(
 )
 
 
-# @app.get('/')
-# def home():
-#     return {
-#         'message': 'Welcome to Insurance Premium Prediction API'
-#     }
+@app.api_route("/", methods=["GET", "HEAD"])
+def home():
+    return {
+        "status": "success",
+        "message": "Insurance Premium Prediction API Running"
+    }
 
 
 @app.get('/health')
